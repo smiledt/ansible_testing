@@ -1,0 +1,7 @@
+- hosts: all:!windows
+  tasks:
+    - action: ping
+
+- hosts: windows
+  tasks: 
+    - action: win_ping
